@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
@@ -125,22 +125,28 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
         >
-          <motion.a
-            href="/blog"
-            className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium hover:opacity-90 transition-opacity"
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Read Blog
-          </motion.a>
-          <motion.a
-            href="/projects"
-            className="px-6 py-3 rounded-lg border border-purple-500 text-purple-400 font-medium hover:bg-purple-500/10 transition-colors"
+            <Link
+              to="/blog"
+              className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium hover:opacity-90 transition-opacity"
+            >
+              Read Blog
+            </Link>
+          </motion.div>
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View Projects
-          </motion.a>
+            <Link
+              to="/projects"
+              className="px-6 py-3 rounded-lg border border-purple-500 text-purple-400 font-medium hover:bg-purple-500/10 transition-colors"
+            >
+              View Projects
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </main>
