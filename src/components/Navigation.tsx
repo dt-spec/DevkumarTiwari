@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const navItems = [
@@ -19,7 +19,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-purple-400 hover:text-purple-300 transition-colors">
+            <Link to="/" className="text-xl font-bold text-purple-400 hover:text-purple-300 transition-colors">
               &lt;Dev/&gt;
             </Link>
           </div>
@@ -30,7 +30,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.path}
+                  to={item.path}
                   className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-purple-400 transition-colors"
                 >
                   {item.name}
@@ -80,7 +80,7 @@ export default function Navigation() {
           {navItems.map((item) => (
             <Link
               key={item.name}
-              href={item.path}
+              to={item.path}
               className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-purple-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
