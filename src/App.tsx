@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
@@ -24,7 +24,7 @@ function App() {
                 {['Projects', 'Blog', 'Now'].map((item) => (
                   <motion.a
                     key={item}
-                    href={`/${item.toLowerCase()}`}
+                    href={`/#/${item.toLowerCase()}`}
                     className="nav-link text-gray-300 hover:text-white"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
