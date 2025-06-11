@@ -1,0 +1,83 @@
+{
+  "intro": {
+    "greeting": "Hey, I'm Dev 👋",
+    "roles": [
+      "Computer Science Student",
+      "Builder",
+      "Relentless Tinkerer"
+    ],
+    "mission": "Chasing big ideas and even bigger impact"
+  },
+  "traits": {
+    "builder": {
+      "description": "From AI voice agents to community platforms, solving real problems with tech",
+      "manifestation": "Shipping full-stack features at 2AM, obsessing over clean backend APIs",
+      "quote": "That sweet spot where creativity meets code"
+    },
+    "explorer": {
+      "description": "Always diving into new technologies and systems",
+      "manifestation": "Juggling startup ideas, side projects, and late-night rabbit holes",
+      "quote": "Probably system design or UX optimization"
+    },
+    "innovator": {
+      "description": "Building platforms that make a real difference",
+      "manifestation": "Creating LogSwipe for blue-collar workers",
+      "quote": "Making the internet a little more useful (and a lot more fun)"
+    },
+    "collaborator": {
+      "description": "Open to learning and working with others",
+      "manifestation": "Always down to chat, collab, or brainstorm wild startup ideas",
+      "quote": "Alone we can do so little; together we can do so much"
+    }
+  },
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "Web + Mobile Dev"],
+    "backend": ["Python", "FastAPI", "PostgreSQL"],
+    "emerging": ["Backend-heavy Systems", "Applied AI", "System Design"]
+  },
+  "current_focus": {
+    "projects": [
+      {
+        "name": "LogSwipe",
+        "description": "Platform supporting blue-collar workers through networking, forums, and AI tools"
+      },
+      {
+        "name": "ML Experiments",
+        "description": "Building smart automation and human-centered tech"
+      }
+    ],
+    "learning": [
+      "System Design",
+      "Backend Architecture",
+      "UX Optimization"
+    ]
+  },
+  "interests": [
+    {
+      "category": "Core Focus",
+      "items": [
+        "AI & Voice Assistants",
+        "Backend & Full-Stack Systems",
+        "Startups & Social Impact",
+        "Open Source Projects"
+      ]
+    },
+    {
+      "category": "Technical",
+      "items": [
+        "Web + Mobile Dev",
+        "DevOps Tools & Infra",
+        "System Design",
+        "Automating Real-World Workflows"
+      ]
+    }
+  ],
+  "vibe": {
+    "current": [
+      "Building an AI-powered forum and job platform",
+      "Studying system design + backend architecture",
+      "Always down to chat, collab, or brainstorm wild startup ideas ☁️🧠"
+    ],
+    "emoji": ["👋", "☁️", "🧠", "💻", "🚀"]
+  }
+} 
