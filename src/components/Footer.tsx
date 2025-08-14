@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center">
           <p className="text-slate-400">
-            Built with ❤️ and lots of coffee by Dev Tiwari
+            Built with ❤️ by Dev Tiwari
           </p>
         </div>
       </div>
