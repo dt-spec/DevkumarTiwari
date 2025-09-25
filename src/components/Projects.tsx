@@ -2,14 +2,14 @@ import { Github, ExternalLink } from "lucide-react";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-slate-900">
+    <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project 1 */}
-          <div className="bg-slate-800/50 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+          <div className="glass-card rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
             <div className="p-6">
               <h3 className="text-xl font-semibold text-white mb-2">Mental Health Voice Assistant</h3>
               <p className="text-slate-300 mb-4">
@@ -37,7 +37,7 @@ export const Projects = () => {
           </div>
 
           {/* Project 2 */}
-          <div className="bg-slate-800/50 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+          <div className="glass-card rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
             <div className="p-6">
               <h3 className="text-xl font-semibold text-white mb-2">Property Recommendation System</h3>
               <p className="text-slate-300 mb-4">

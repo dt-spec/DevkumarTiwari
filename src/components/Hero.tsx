@@ -4,13 +4,11 @@ import { ChevronDown } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
-      {/* Dark background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-      
-      {/* Animated floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-purple-500/10 rounded-full blur-xl animate-pulse delay-700"></div>
-      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-500/10 rounded-full blur-xl animate-pulse delay-300"></div>
+      {/* Cosmic floating elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse cosmic-glow"></div>
+      <div className="absolute bottom-32 right-16 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-700 cosmic-glow"></div>
+      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-300 cosmic-glow"></div>
+      <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-purple-500/15 rounded-full blur-lg animate-pulse delay-1000 star-glow"></div>
       
       <div className="text-center z-10 max-w-4xl mx-auto">
         <div className="mb-6">
@@ -41,7 +39,7 @@ export const Hero = () => {
           </button>
           <button 
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 border-2 border-slate-600 rounded-lg font-semibold text-slate-300 hover:border-blue-400 hover:text-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-3 glass-button rounded-lg font-semibold text-white hover:text-blue-400 transition-all duration-300"
           >
             Let's Connect
           </button>

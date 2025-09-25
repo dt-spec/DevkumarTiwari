@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-slate-900">
+    <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -16,7 +16,7 @@ export const Contact = () => {
             {/* Email */}
             <a
               href="mailto:devkumar@ualberta.ca"
-              className="group bg-slate-800/50 p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+              className="group glass-card p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
             >
               <div className="flex flex-col items-center">
                 <Mail className="w-8 h-8 text-blue-400 mb-4 group-hover:scale-110 transition-transform" />
@@ -30,7 +30,7 @@ export const Contact = () => {
               href="https://www.linkedin.com/in/dev-tiwari-99a047209/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-slate-800/50 p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+              className="group glass-card p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
             >
               <div className="flex flex-col items-center">
                 <Linkedin className="w-8 h-8 text-blue-400 mb-4 group-hover:scale-110 transition-transform" />
@@ -44,7 +44,7 @@ export const Contact = () => {
               href="https://github.com/dt-spec"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-slate-800/50 p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+              className="group glass-card p-6 rounded-lg hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
             >
               <div className="flex flex-col items-center">
                 <Github className="w-8 h-8 text-blue-400 mb-4 group-hover:scale-110 transition-transform" />

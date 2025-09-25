@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-slate-900/90 backdrop-blur-md border-b border-slate-700/50" : "bg-transparent"
+      isScrolled ? "glass-nav" : "bg-transparent"
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -41,6 +41,9 @@ export const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button onClick={() => scrollToSection("about")} className="text-slate-300 hover:text-blue-400 transition-colors">
               About
+            </button>
+            <button onClick={() => scrollToSection("experience")} className="text-slate-300 hover:text-blue-400 transition-colors">
+              Experience
             </button>
             <button onClick={() => scrollToSection("projects")} className="text-slate-300 hover:text-blue-400 transition-colors">
               Projects
@@ -82,6 +85,9 @@ export const Header = () => {
             <div className="flex flex-col space-y-4">
               <button onClick={() => scrollToSection("about")} className="text-left text-slate-300 hover:text-blue-400 transition-colors">
                 About
+              </button>
+              <button onClick={() => scrollToSection("experience")} className="text-left text-slate-300 hover:text-blue-400 transition-colors">
+                Experience
               </button>
               <button onClick={() => scrollToSection("projects")} className="text-left text-slate-300 hover:text-blue-400 transition-colors">
                 Projects
